@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <div class="sidebar" data-color="blue">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="main-panel">
+        <app-navbar (channelSelected)='setChannelChanged($event)' (searchChange)='setSearchTextChanged($event)' [searchText]=searchText></app-navbar>
+        <app-stream [searchText]=searchText [channelText]=channelSelected></app-stream>
+        <app-footer></app-footer>
+    </div>
+</div>

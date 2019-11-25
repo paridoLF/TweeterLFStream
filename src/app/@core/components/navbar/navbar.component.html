@@ -1,0 +1,43 @@
+
+<nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+                <button type="button" class="navbar-toggler" (click)="sidebarToggle()">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <select class="custom-select" placeholder="Channel select" [(ngModel)]="channel" (change)="onChannelChange()">
+              <option value="0" disabled>Choose your channel</option>
+              <option value="pubnub-twitter">pubnub-twitter</option>
+              <option value="USA">USA</option>
+           </select>
+        </div>
+        <button class="navbar-toggler" type="button" (click)="collapse()"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+          <span class="navbar-toggler-bar navbar-kebab"></span>
+          <span class="navbar-toggler-bar navbar-kebab"></span>
+          <span class="navbar-toggler-bar navbar-kebab"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapseExample" [ngbCollapse]="isCollapsed">
+          <form>
+            <div class="input-group no-border">
+              <input [(ngModel)]="searchText" type="text"  [ngModelOptions]="{standalone: true}" value="searchText" class="form-control" placeholder="Search..." (keydown.enter)="handleclick()">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="now-ui-icons ui-1_zoom-bold"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item" ngbDropdown>
+            </li>
+            <li class="nav-item">     
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>
