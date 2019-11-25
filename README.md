@@ -1,6 +1,4 @@
 
-**Bootstrap 4 Support**
-Now UI Dashboard Angular is built on top of the much awaited Bootstrap 4. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 project; you can just import the Now UI Dashboard Angular style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
 ## Terminal Commands
 
@@ -52,11 +50,11 @@ Now Ui Dashboard
 │   │   │       ├── sidebar.component.html
 │   │   │       ├── sidebar.component.spec.ts
 │   │   │       └── sidebar.component.ts
-│   │   ├── dashboard
-│   │   │   ├── dashboard.component.css
-│   │   │   ├── dashboard.component.html
-│   │   │   ├── dashboard.component.spec.ts
-│   │   │   └── dashboard.component.ts
+│   │   ├── stream
+│   │   │   ├── stream.component.css
+│   │   │   ├── stream.component.html
+│   │   │   ├── stream.component.spec.ts
+│   │   │   └── stream.component.ts
 │   ├── assets
 │   │   ├── demo
 │   │   ├── fonts
